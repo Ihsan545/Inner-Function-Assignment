@@ -9,7 +9,7 @@ This program is example of calling a function to return the value.
 def multiply_string(string):  # declaring function and parameter string.
     message_string = "Nice!"  # string variable.
     for i in range(string):  # for loop
-        print(message_string, end)  # print string.
+        print(message_string, end="")  # print string.
 
     return string  # return statement.
 
