@@ -12,12 +12,6 @@ def measurements(rectangle): # outer function.
         total_area = ('Area  = ' + str(rectangle[0] * rectangle[1]))
         return total_area  # return statement.
 
-    def perimeter(a): # calling inner function perimeter
-        total_perimeter = ('Perimeter  = ' + str(2 * (rectangle[0] + rectangle[1])))
-        return total_perimeter  # return statement.
-
-    perimeter(rectangle)
-    return area(rectangle) # calling function area.
 
 
 if __name__ == '__main__':
