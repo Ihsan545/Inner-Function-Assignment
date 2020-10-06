@@ -7,10 +7,10 @@ class MyTestCase(unittest.TestCase):
         self.assertTrue(validate_input_in_function.score_input("python", 7))
 
     def test_above_range_input(self):
-        self.assertTrue(validate_input_in_function.score_input("Invalid value, above the range"), 245)
+        self.assertTrue(validate_input_in_function.score_input("Invalid value, above the range"), -245)
 
     def test_score_below_range_input(self):
-        self.assertTrue(validate_input_in_function.score_input("Invalid value, below the range"), 1)
+        self.assertTrue(validate_input_in_function.score_input("Invalid value, below the range"), -1)
 
     def test_test_score_non_numeric(self):
         self.assertRaises(ValueError, validate_input_in_function.score_input("Non numeric", "b"))
